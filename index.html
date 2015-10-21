@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show Me the Bakin'</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:100,400,600,700|Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+</head>
+  
+<body>
+	<header>
+		<div class="content-wrapper">
+			<h1>Show me the bakin'</h1>
+			<img src="images/cupcakes.jpg" alt="">
+		</div>
+	</header>
+	<section id="input" class="background">
+		<div class="content-wrapper">
+			<p>Find an open bakery near&nbsp;you&nbsp;&nbsp;<i class="fa fa-clock-o"></i></p>
+			<form id="find-a-bakery">
+
+				<input id="address" class="input" type="textbox" placeholder="Enter your location here (e.g. Spadina and Queen)"><br>
+
+				<a href="#map-canvas"><input type="button" class="button" id="searchByKeyword" value="Search" onclick="searchArea()"></a>
+				<a href="#map-canvas"><input type="button" class="button" id="searchByGeolocation" value="Find Me" onclick="findGeoLocation()"></a><br>
+				<input type="button" class="button" id="clear" value="Clear" onclick="clearForm()">
+			</form>
+		</div>
+	</section>
+	<section id="map-canvas">
+
+	</section>
+
+	<div id="legend">
+		<ul>
+			<li><img src="http://maps.google.com/mapfiles/ms/icons/blue-dot.png">My Location</li>
+			<li><img src="http://maps.google.com/mapfiles/ms/icons/green-dot.png"> Open</li>
+			<li><img src="http://maps.google.com/mapfiles/ms/icons/red-dot.png"> Closed</li>
+			<li><img src="http://maps.google.com/mapfiles/ms/icons/orange-dot.png"> Hours unknown</li>
+			<a href="#map-canvas"><input type="button" class="button-hide" id="toggleClosed" value="Hide Closed Shops"></a>
+		</ul>
+	</div>
+
+	<footer>
+	<p>&copy; 2015 Designed and developed by <a href="http://www.nadiavan.com">Nadia&nbsp;Siu&nbsp;Van</a></p>
+	</footer>
+
+</body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyBzO48uDw9fIb7z1Igyb7WjShZzCyTDxK4"></script>
+<script src="js/script.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67505924-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</html>

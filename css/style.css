@@ -1,0 +1,187 @@
+/*Nadia Siu Van*/
+
+/* GLOBAL STYLES
+------------------*/
+
+html, 
+body { 
+	height: 100%; 
+	margin: 0; 
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 100%;
+}
+a {
+	text-decoration:none;
+}
+header, section, footer, header img {
+	width: 100%;
+}
+header, section, footer, header img, .content-wrapper{
+/*	border: 1px solid blue;*/
+}
+h1 {
+	text-transform: uppercase;
+	font-family: 'Amatic SC', cursive;
+	font-size:3.5em;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+header {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	margin: 0 auto;
+	padding: 1em 0 0;
+	color: #000;
+	font-size: 2em;
+}
+	header img {
+		width: 95%;
+		margin: 1em 1em 0 0;
+	}
+footer {
+	text-align: center;
+	padding: 0.5em 0;
+	font-family: 'Amatic SC', cursive;
+	font-size:2em;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+	align-items: center;
+	-webkit-align-items: center;
+}
+	footer p {
+		border: 0px solid #ffc4b2;
+		border-bottom-width: 3px;
+/*		width:27%;*/
+		margin: 0 auto;
+	}
+	footer a {
+		color:#f28300;
+	}
+		footer a:hover {
+			color:#000;
+		}
+
+#address {
+	border: 0px solid #ffc4b2;
+	border-bottom-width: 3px;
+	margin: 0 0 2.5em;
+}
+input, select{
+	padding: 1em;
+	width: 40em;
+	margin: 1em 0;
+	border: none;
+	text-align: center;
+	background-color: none;
+}
+	input.button, input.button-hide {
+		text-transform: uppercase;
+		margin: 0.5em 1em;
+		background-color: #f49320;
+		color: #fff;
+	}
+
+	input.button {
+		width: 15em;
+	}
+
+	input.button-hide {
+		font-size: 1em;
+		width:13em;
+	}
+		input.button:hover, input.current:hover, input.button-hide:hover {
+			cursor: pointer;
+		}
+		input.button:hover, input.button-hide:hover {
+			background-color: #f28300;
+		}
+
+.content-wrapper, #map-canvas {
+	margin: 0 auto;
+	position: relative;
+	max-width: 1200px;
+	padding: 0 0.5em;
+	overflow: hidden;
+}
+#map-canvas {
+	height: 40em; 
+	max-width: 100%;
+	margin: 0;
+}
+#input {
+	width: 100%;
+	text-align: center;
+	padding: 1em 0 5em;
+}
+	#input p {
+		text-transform: uppercase;
+		color: #000;
+		font-size: 1.4em;
+		margin: 1.4em 0 0.7em;
+		font-weight: 400;
+	}
+
+/*#output {
+	float: right;
+	width: 45%;
+}*/
+.bakery-name {
+	font-size: 1.25em;
+}
+#legend {
+background: rgba(0,0,0,0.5);
+padding: 1em;
+margin: 2em;
+}
+li { /* Legend */
+	list-style-type: none;
+	vertical-align: middle;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0.25em 0;
+	font-weight: bold;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+
+/* MEDIA QUERIES
+------------------*/
+
+@media screen and (max-width: 610px) {
+	#address {
+		width: 95%;
+	}
+	h1 {
+		font-size:2.5em;
+	}
+	img {
+		width:100%;
+	}
+	input.button {
+		width: 100%;
+	}
+	footer p {
+		font-size:0.8em;
+	}
+	#legend img {
+		width:2em;
+	}
+	#legend li {
+		display:inline-block;
+	}
+}
+
